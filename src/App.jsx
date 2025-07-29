@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import './App.css'
 import Home from './components/Home/Home'
 import About from './components/About/About'
+import Vans from './components/Vans/Vans'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
+        <Route path='/vans' element={<Vans />} />
       </Routes>
       <nav className='footer'>
         <div>@2025 #VANLIFE</div>

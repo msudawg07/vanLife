@@ -1,4 +1,5 @@
 import s from "./About.module.css"
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 
 export default function About() {
   return (
@@ -24,7 +25,7 @@ export default function About() {
           <h2>Your destination is waiting.
               Your van is ready.
           </h2>
-          <button>Explore our vans</button>
+          <Link to='/van'>Explore our vans</Link>
         </div>
 
 
